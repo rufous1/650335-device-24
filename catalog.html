@@ -30,8 +30,8 @@
             </nav>
         </header>
 
-        <main class="container">
-            <div class="header-page-content">
+        <main class="page-catalog">
+            <div class="catalog_nav">
                 <h2>Моноподы для селфи</h2>
                 <ul>
                     <l1><a href="index.html">Главная</a></l1>
@@ -39,105 +39,95 @@
                     <l1><a>Моноподы для селфи</a></l1>
                 </ul>
             </div>
-            <section class="sidebar">
-                <div class="sidebar-title">
-                    <h2>Фильтр:</h2>
-                </div>
-                <form action="">
-                    <div class="sidebar-cost">
+            <div class="catalog_sidebar">
+                <h2 class="sidebar_title">Фильтр:</h2>
+                <div class="sidebar_filter">
+                    <form action="">
                         <span>Стоимость</span>
-                    </div>
-                    <div class="sidebar-filter-item">
-                        <fieldset class="filter-list">
-                            <legend>Цвет</legend>
-                            <ul class="filter-color">
-                                <li>
-                                    <input type="checkbox" name="black" id="black" checked>
-                                    <label for="black">Черный</label>
-                                </li>
-                                <li>
-                                    <input type="checkbox" name="white" id="white">
-                                    <label for="white">Белый</label>
-                                </li>
-                                <li>
-                                    <input type="checkbox" name="blue" id="blue" checked>
-                                    <label for="blue">Синий</label>
-                                </li>
-                                <li>
-                                    <input type="checkbox" name="red" id="red" checked>
-                                    <label for="red">Красеый</label>
-                                </li>
-                                <li>
-                                    <input type="checkbox" name="pink" id="pink">
-                                    <label for="pink">Розовый</label>
-                                </li>
-                            </ul>
-                        </fieldset>
-                    </div>
-                    <div class="sidebar-filter-item">
-                        <fieldset class="filter-list">
-                            <legend>Bluetooth</legend>
-                            <ul class="filter-radio">
-                                <li>
-                                    <input type="radio" name="bluetooth" id="bluetooth-yes" value="yes" checked>
-                                    <label for="bluetooth-yes">Есть</label>
-                                </li>
-                                <li>
-                                    <input type="radio" name="bluetooth" id="bluetooth-no" value="no">
-                                    <label for="bluetooth-no">Нет</label>
-                                </li>
-                            </ul>
-                        </fieldset>
-                    </div>
-                    <button class="btn" type="submit">Показать</button>
-                </form>
-            </section>
-            <section class="shop_inner">
+                    </form>
+                </div>
+                <div class="sidebar_filter">
+                    <fieldset>
+                        <legend>Цвет</legend>
+                        <ul class="sidebar_filter-color">
+                            <li>
+                                <input type="checkbox" name="black" id="black" checked>
+                                <label for="black">Черный</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" name="white" id="white">
+                                <label for="white">Белый</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" name="blue" id="blue" checked>
+                                <label for="blue">Синий</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" name="red" id="red" checked>
+                                <label for="red">Красеый</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" name="pink" id="pink">
+                                <label for="pink">Розовый</label>
+                            </li>
+                        </ul>
+                    </fieldset>
+                </div>
+                <div class="sidebar_filter">
+                    <fieldset>
+                        <legend>Bluetooth</legend>
+                        <ul class="sidebar_filter-radio">
+                            <li>
+                                <input type="radio" name="bluetooth" id="bluetooth-yes" value="yes" checked>
+                                <label for="bluetooth-yes">Есть</label>
+                            </li>
+                            <li>
+                                <input type="radio" name="bluetooth" id="bluetooth-no" value="no">
+                                <label for="bluetooth-no">Нет</label>
+                            </li>
+                        </ul>
+                    </fieldset>
+                </div>
+                <button class="sidebar_btn" type="submit">Показать</button>
+            </div>
+            <div class="catalog_product">
                 <article class="product_card">
-                    <div class="product_card-img">
-                        <img src="img/" alt="Любительская селфи-палка">
-                    </div>
+                    <img src="img/" alt="Любительская селфи-палка">
                     <div class="product_card-info">
                         <h3>
                             <a href="#">Любительская селфи-палка</a>
                         </h3>
-                    <span>500 руб.</span>
+                        <span>500 руб.</span>
                     </div>
                 </article>
                 <article class="product_card">
-                    <div class="product_card-img">
-                        <img src="img/" alt="Профессиональная селфи-палка">
-                    </div>
+                    <img src="img/" alt="Профессиональная селфи-палка">
                     <div class="product_card-info">
                         <h3>
                             <a href="#">Профессиональная селфи-палка</a>
                         </h3>
-                    <span>1 500 руб.</span>
+                        <span>1 500 руб.</span>
                     </div>
                 </article>
                 <article class="product_card">
-                    <div class="product_card-img">
-                        <img src="img/" alt="Непотопляемая селфи-палка">
-                    </div>
+                    <img src="img/" alt="Непотопляемая селфи-палка">
                     <div class="product_card-info">
                         <h3>
                             <a href="#">Непотопляемая селфи-палка</a>
                         </h3>
-                    <span>2 500 руб.</span>
+                        <span>2 500 руб.</span>
                     </div>
                 </article>
                 <article class="product_card">
-                    <div class="product_card-img">
-                        <img src="img/" alt="Селфи-палка «Следуй за мной»">
-                    </div>
+                    <img src="img/" alt="Селфи-палка «Следуй за мной»">
                     <div class="product_card-info">
                         <h3>
                             <a href="#">Селфи-палка «Следуй за мной»</a>
                         </h3>
-                    <span>4 900 руб.</span>
+                        <span>4 900 руб.</span>
                     </div>
                 </article>
-            </section>
+            </div>
         </main>
 
         <footer class="main-footer">
