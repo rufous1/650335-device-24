@@ -3,6 +3,8 @@
     <head>
         <meta charset="UTF-8">
         <title>Каталог товаров</title>
+         <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/style.css">
     </head>
     <body>
         <header class="main-header">
@@ -10,8 +12,12 @@
             <a class="header_logo" href="index.html"><img src="img/" alt="DEVICE"></a>
             <nav class="header_nav">
                 <div class="header_user-nav">
-                    <!-- Здесь будет форма поиска -->
-                    <span>Поиск по сайту</span>
+                     <form action="" method="get">
+                        <label>
+                            <input type="search" name="search" placeholder="Поиск по сайту">
+                            <button class="btn_search" type="submit">Найти</button>
+                        </label>
+                    </form>
                     <ul class="header_user-list">
                         <li class="header_login">
                             <a class="profile" href="">Валентин Петухов</a>
@@ -29,24 +35,19 @@
                 </ul>
             </nav>
         </header>
-
         <main class="page-catalog">
             <div class="catalog_nav">
                 <h2>Моноподы для селфи</h2>
                 <ul>
                     <l1><a href="index.html">Главная</a></l1>
                     <l1><a href="#">Каталог товаров</a></l1>
-                    <l1><a>Моноподы для селфи</a></l1>
+                    <l1><a href="#">Моноподы для селфи</a></l1>
                 </ul>
             </div>
-            <div class="catalog_sidebar">
-                <h2 class="sidebar_title">Фильтр:</h2>
-                <div class="sidebar_filter">
-                    <form action="">
-                        <span>Стоимость</span>
-                    </form>
-                </div>
-                <div class="sidebar_filter">
+            <section class="sidebar_filters">
+                <h2 class="filters_title">Фильтр:</h2>
+                <form action="" method="get">
+                    <span>Стоимость</span>
                     <fieldset>
                         <legend>Цвет</legend>
                         <ul class="sidebar_filter-color">
@@ -72,8 +73,6 @@
                             </li>
                         </ul>
                     </fieldset>
-                </div>
-                <div class="sidebar_filter">
                     <fieldset>
                         <legend>Bluetooth</legend>
                         <ul class="sidebar_filter-radio">
@@ -87,49 +86,75 @@
                             </li>
                         </ul>
                     </fieldset>
-                </div>
-                <button class="sidebar_btn" type="submit">Показать</button>
-            </div>
-            <div class="catalog_product">
-                <article class="product_card">
-                    <img src="img/" alt="Любительская селфи-палка">
-                    <div class="product_card-info">
-                        <h3>
-                            <a href="#">Любительская селфи-палка</a>
-                        </h3>
-                        <span>500 руб.</span>
-                    </div>
-                </article>
-                <article class="product_card">
-                    <img src="img/" alt="Профессиональная селфи-палка">
-                    <div class="product_card-info">
-                        <h3>
-                            <a href="#">Профессиональная селфи-палка</a>
-                        </h3>
-                        <span>1 500 руб.</span>
-                    </div>
-                </article>
-                <article class="product_card">
-                    <img src="img/" alt="Непотопляемая селфи-палка">
-                    <div class="product_card-info">
-                        <h3>
-                            <a href="#">Непотопляемая селфи-палка</a>
-                        </h3>
-                        <span>2 500 руб.</span>
-                    </div>
-                </article>
-                <article class="product_card">
-                    <img src="img/" alt="Селфи-палка «Следуй за мной»">
-                    <div class="product_card-info">
-                        <h3>
-                            <a href="#">Селфи-палка «Следуй за мной»</a>
-                        </h3>
-                        <span>4 900 руб.</span>
-                    </div>
-                </article>
-            </div>
+                    <button class="sidebar_btn" type="submit">Показать</button>
+                </form>
+            </section>
+            <section class="catalog_product">
+                <h2 class="visually-hidden">Каталок моноподов для селфи</h2>
+                <ul>
+                    <li>
+                        <article class="product_card">
+                            <img src="img/jpg-device/product-card-1.jpg" width="360" height="380" alt="Любительская селфи-палка">
+                            <div class="product_card-info">
+                                <h3>
+                                <a href="#">Любительская селфи-палка</a>
+                                </h3>
+                                <span>500 руб.</span>
+                            </div>
+                            <div>
+                                <a href="#">В корзину</a>
+                                <a href="#">Добавить к сравнению</a>
+                            </div>
+                        </article>
+                    </li>
+                    <li>
+                        <article class="product_card">
+                            <img src="img/jpg-device/product-card-2.jpg" width="360" height="380" alt="Профессиональная селфи-палка">
+                            <div class="product_card-info">
+                                <h3>
+                                <a href="#">Профессиональная селфи-палка</a>
+                                </h3>
+                                <span>1 500 руб.</span>
+                            </div>
+                            <div>
+                                <a href="#">В корзину</a>
+                                <a href="#">Добавить к сравнению</a>
+                            </div>
+                        </article>
+                    </li>
+                    <li>
+                        <article class="product_card">
+                            <img src="img/jpg-device/product-card-3.jpg" width="360" height="380" alt="Непотопляемая селфи-палка">
+                            <div class="product_card-info">
+                                <h3>
+                                <a href="#">Непотопляемая селфи-палка</a>
+                                </h3>
+                                <span>2 500 руб.</span>
+                            </div>
+                            <div>
+                                <a href="#">В корзину</a>
+                                <a href="#">Добавить к сравнению</a>
+                            </div>
+                        </article>
+                    </li>
+                    <li>
+                        <article class="product_card">
+                            <img src="img/jpg-device/product-card-4.jpg" width="360" height="380" alt="Селфи-палка «Следуй за мной»">
+                            <div class="product_card-info">
+                                <h3>
+                                <a href="#">Селфи-палка «Следуй за мной»</a>
+                                </h3>
+                                <span>4 900 руб.</span>
+                            </div>
+                            <div>
+                                <a href="#">В корзину</a>
+                                <a href="#">Добавить к сравнению</a>
+                            </div>
+                        </article>
+                    </li>
+                </ul>
+            </section>
         </main>
-
         <footer class="main-footer">
             <div class="footer_top">
                 <a class="footer_logo" href="index.html"><img src="img/" alt="DEVICE"></a>
