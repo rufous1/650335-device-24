@@ -10,41 +10,36 @@
         <header class="main-header">
             <h1 class="visually-hidden">Интернет-магазин гаджетов "DEVICE"</h1>
             <a class="header_logo" href="#"><img src="img/svg-device/logo.svg" alt="DEVICE"></a>
-            <nav class="header_nav">
-                <div class="header_user-nav">
+            <nav class="main_nav">
+                <!-- <a class="header_logo" href="#"><img src="img/svg-device/logo.svg" alt="DEVICE"></a> -->
+                <div class="user_nav-wrap">
+                    <div class="container">
                     <form action="" method="get">
-                        <label>
-                            <input type="search" name="search" placeholder="Поиск по сайту">
-                            <button class="btn_search" type="submit">Найти</button>
-                        </label>
+                        <input type="search" name="search" placeholder="Поиск по сайту">
+                        <button class="btn_search" type="submit">Найти</button>
                     </form>
-                    <ul class="header_user-list">
+                    <ul class="header_user-nav">
                         <li class="header_login"><a href="#">Войти</a></li>
                         <li class="header_compare"><a href="#">Сравнить</a></li>
                         <li class="header_basket"><a href="#">Корзина</a></li>
                     </ul>
                 </div>
+                </div>
                 <ul class="header_site-nav">
-                    <li>
-                        <a href="catalog.html">Коталог товаров</a>
-                        <div class="header_catalog">
-                            <ul >
-                                <li><a href="#">Виртуальная реальность</a></li>
-                                <li><a href="#">Моноподы для селфи</a></li>
-                                <li><a href="#">Экшн-камеры</a></li>
-                            </ul>
-                            <ul>
-                                <li><a href="#">Фитнес-браслеты</a></li>
-                                <li><a href="#">Умные часы</a></li>
-                            </ul>
-                            <ul>
-                                <li><a href="#">Квадрокоптеры</a></li>
-                            </ul>
-                        </div>                        
+                    <li class="catalog">
+                        <a class="site_nav-links" href="catalog.html">Коталог товаров</a>
+                        <ul class="catalog-nav">
+                            <li><a href="#">Виртуальная реальность</a></li>
+                            <li><a href="#">Моноподы для селфи</a></li>
+                            <li><a href="#">Экшн-камеры</a></li>
+                            <li><a href="#">Фитнес-браслеты</a></li>
+                            <li><a href="#">Умные часы</a></li>
+                            <li><a href="#">Квадрокоптеры</a></li>
+                        </ul>                       
                     </li>
-                    <li><a href="#">Доставка</a></li>
-                    <li><a href="#">Гарантия</a></li>
-                    <li><a href="#">Контакты</a></li>
+                    <li><a class="site_nav-links" href="#">Доставка</a></li>
+                    <li><a class="site_nav-links" href="#">Гарантия</a></li>
+                    <li><a class="site_nav-links" href="#">Контакты</a></li>
                 </ul>
             </nav>
         </header>
