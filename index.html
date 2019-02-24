@@ -9,13 +9,15 @@
     <body>
         <header class="main-header">
             <h1 class="visually-hidden">Интернет-магазин гаджетов "DEVICE"</h1>
-            <a class="header_logo" href="#"><img src="img/svg-device/logo.svg" alt="DEVICE"></a>
+            <!-- <a class="header_logo" href="#"><img src="img/svg-device/logo.svg" alt="DEVICE"></a> -->
+            <div class="container">
             <nav class="main_nav">
-                <!-- <a class="header_logo" href="#"><img src="img/svg-device/logo.svg" alt="DEVICE"></a> -->
-                <div class="user_nav-wrap">
-                    <div class="container">
-                    <form action="" method="get">
-                        <input type="search" name="search" placeholder="Поиск по сайту">
+                <a class="header_logo" href="#">
+                    <img src="img/svg-device/logo.svg" width="163px" height="35px" alt="DEVICE">
+                </a>
+                <div class="container">
+                    <form class="main_nav-search" action="" method="get">
+                        <input class="search" type="search" name="search" placeholder="Поиск по сайту">
                         <button class="btn_search" type="submit">Найти</button>
                     </form>
                     <ul class="header_user-nav">
@@ -23,7 +25,6 @@
                         <li class="header_compare"><a href="#">Сравнить</a></li>
                         <li class="header_basket"><a href="#">Корзина</a></li>
                     </ul>
-                </div>
                 </div>
                 <ul class="header_site-nav">
                     <li class="catalog">
@@ -42,6 +43,7 @@
                     <li><a class="site_nav-links" href="#">Контакты</a></li>
                 </ul>
             </nav>
+            </div>
         </header>
 
         <main class="container">
@@ -224,6 +226,7 @@
         </main>
 
         <footer class="main-footer">
+            <div class="container">
             <div class="footer_top">
                 <a class="footer_logo" href="index.html"><img src="img/" alt="DEVICE"></a>
                 <ul class="footer_user-nav">
@@ -251,6 +254,7 @@
                     <img src="img/logo-html.svg" alt="HTML Academy">
                 </a>
             </div>  
+            </div>
         </footer>
 
         <!-- Всплывающи окна: напишите нам и карта -->
