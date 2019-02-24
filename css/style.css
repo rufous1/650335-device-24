@@ -108,26 +108,27 @@ a {
 	opacity: 0.3;
 }
 
-li.catalog ul.catalog-nav {
-	display: none;
-}
-
-li.catalog:hover ul.catalog-nav {
-	display: block;
-}
-
 .main-header {
-    /*position: relative;*/
-    width: 1160px;
-    height: 299px;
-    margin-top: 40px;
-    margin-left: auto;
-    margin-right: auto;
-    background-color: #ffe294;
-    color: #000000;
+
 }
 
-.header_logo {
+.container {
+	width: 1160px;
+	margin: 0 auto;
+	padding: 0 20px;
+}
+
+.main_nav {
+	display: flex;
+	flex-direction: column;
+	width: 1160px;
+	height: 300px;
+	margin-top: 40px;
+    background-color: #f8e296;
+    color: #000;
+}
+
+.header_logo img {
 	position: absolute;
 	margin-top: -20px;
 	margin-left: 60px;
@@ -141,77 +142,169 @@ li.catalog:hover ul.catalog-nav {
 	opacity: 0.3;
 }
 
-.main_nav {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-}
-
-.user_nav-wrap {
-	width: 100%;
-	margin-top: 53px;
-}
-
-.container {
-	width: 1040px;
-	margin: 0 auto;
+.header_user-nav,
+.header_site-nav,
+.catalog-nav {
+	display: block;
+	margin: 0;
 	padding: 0;
+}
+
+.main_nav .container {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 1040px;
+	min-height: 50px;
+	margin-top: 30px;
+	margin-left: 60px;
+	padding: 0;
+}
+
+.main_nav-search {
+	position: relative;
+    width: 440px;
+	height: 50px;
+	padding-left: 35px;
+}
+
+.main_nav-search::before {
+    content: "";
+	position: absolute;
+	top: 18px;
+	left: 0px;
+	width: 20px;
+	height: 20px;
+	background-image: url(../img/svg-device/search.svg);
+	background-repeat: no-repeat;
+	background-position: 0 0;
+}
+
+.search {
+	width: 335px;
+	height: 50px;
+	font-family: 'Open Sans', 'Arial', sans-serif;
+	font-size: 15px;
+	line-height: 30px;
+	font-weight: 300;
+	letter-spacing: 0.15px;
+	color: #000000;
+	border: none;
+	background-color: transparent;
+	opacity: 0.3;
+}
+
+.search:hover {
+    opacity: 0.6;
+}
+
+.search:focus {
+	border-bottom: 2px solid #000;
+}
+
+.btn_search {
+	display: none;
+}
+
+.btn_search:focus {
+    display: block;
 }
 
 .header_user-nav {
-	width: 500px;
-	margin: 0;
-	height: 15px;
-	/* margin-left: 600px;
-	margin-right: 60px; */
-	padding: 0;
-	list-style: none;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 520px;
+	height: 25px;
 }
 
-.header_user-nav li,
-.header_site-nav li {
-    display: inline;
-    margin-top: 
+.header_user-nav li:first-child {
+	width: 280px;
 }
 
 .header_user-nav li:nth-child(2) {
-	margin-left: 238px;
+	width: 100px;
 }
 
 .header_user-nav li:last-child {
-	margin-left: 65px;
+	width: 90px;
 }
 
-.user_nav-wrap form {
-	width: 145px;
-	margin: 0;
-	padding: 0;
-	/*margin-top: 53px;*/
+.header_user-nav a {
+	position: relative;
+	padding-left: 27px;
 }
 
-.user_nav-wrap .container {
-    display: flex;
-    justify-content: space-between;
+.header_user-nav a::before {
+	content: "";
+	position: absolute;
+	top: 5px;
+	left: 0px;
+	width: 13px;
+	height: 12px;
+}
+
+.header_login a::before {
+	background-image: url(../img/svg-device/user.svg);
+	background-repeat: no-repeat;
+	background-position: 0 0;
+}
+
+.header_compare a::before {
+	background-image: url(../img/svg-device/compare.svg);
+	background-repeat: no-repeat;
+	background-position: 0 0;
+}
+
+.header_basket a::before {
+	background-image: url(../img/svg-device/cart.svg);
+	background-repeat: no-repeat;
+	background-position: 0 0;
 }
 
 .header_site-nav {
+	display: flex;
+	justify-content: space-between;
 	width: 1040px;
-	margin-top: 50px;
-	/* height: 18px;
-	margin-bottom: 170px;
+	height: 30px;
+	margin-top: 35px;
 	margin-left: 60px;
-	margin-right: 60px; */
 	padding: 0;
-	list-style: none;
 }
 
-.header_site-nav li:nth-child(2) {
-	margin-left: 320px;
+.header_site-nav li:nth-child(1) {
+	margin-right: 280px;
 }
+
 .header_site-nav li:nth-child(3) {
 	margin-left: 38px;
 }
 
 .header_site-nav li:last-child {
 	margin-left: 85px;
+}
+
+.header_site-nav .catalog {
+	position: relative;
+	padding-right: 30px;
+}
+
+.header_site-nav .catalog::after {
+    content: "";
+	position: absolute;
+	top: 5px;
+	right: 0px;
+	width: 20px;
+	height: 20px;
+	background-image: url(../img/svg-device/plus.svg);
+	background-repeat: no-repeat;
+	background-position: 0 0;
+}
+
+ li.catalog ul.catalog-nav {
+	display: none;
+}
+
+li.catalog:hover ul.catalog-nav {
+	display: block;
 }
