@@ -375,21 +375,20 @@ a {
 /*Стилизация Main*/
 
 .main-slider {
-	width: 1100px;
+	width: 1160px;
 	margin: 0;
 	margin-top: -110px;
-	margin-right: 60px;
 	padding: 0;
 	overflow: hidden;
 }
 
 .slider-control {
-	position: absolute;
-	top: 565px;
-	left: 1390px;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
+	position: absolute;
+	top: 565px;
+	left: 1390px;
 	min-width: 80px;
 	margin: 0;
 	padding: 0;
@@ -406,19 +405,20 @@ a {
 }
 
 .slider-list {
-	display: inline-block;
-	width: 100%;
+	display: flex;
+	justify-content: flex-start;
+	position: relative;
 	counter-reset: list1;
+	width: 99999px;
 	margin: 0;
 	padding: 0;
 	list-style-type: none;
 }
 
 .slider-item {
-	float: left;
+	display: block;
 	position: relative;
-	width: 1100px;
-	margin-right: 60px;
+	width: 1160px;
 }
 
 .slider-item::before {
@@ -452,6 +452,7 @@ a {
 	/*align-items: center;*/
 	margin: 0;
 	margin-top: -180px;
+	margin-right: 60px;
 	z-index: 3;
 }
 
@@ -507,10 +508,10 @@ a {
 	text-align: center;
 	background-color: #f0c52e;
 	background: linear-gradient(to top, transparent 16px, #f0c52e 16px, #f0c52e 24px, transparent 24px);
-	z-index: 1;
 }
 
-.slide a:hover {
+.slide a:hover,
+.slide a:focus {
 	background-color: #f0c52e;
 }
 
