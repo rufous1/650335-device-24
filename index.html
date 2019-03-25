@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <title>HTML Academy: Девайс</title>
   <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style.min.css">
 </head>
 
 <body>
@@ -129,7 +129,7 @@
           </li>
           <li class="slider-item">
             <article class="slide slide2">
-              <img src="img/png-device/slider-2.png" width="345px" height="485px" alt="Мотивирующий фитнес-браслет">
+              <img src="img/png-device/slider-2.png" width="345" height="485" alt="Мотивирующий фитнес-браслет">
               <div class="container">
                 <h3>Худеем<br> правильно!</h3>
                 <p>Мотивирующие фитнес-браслеты помогут найти в себе силы<br> не пропускать занятия и соблюдать диету.</p>
@@ -147,7 +147,7 @@
           </li>
           <li class="slider-item">
             <article class="slide slide3">
-              <img src="img/png-device/slider-3.png" width="526px" height="334px" alt="Квадрокоптер, оснащенный мощным лазером">
+              <img src="img/png-device/slider-3.png" width="526" height="334" alt="Квадрокоптер, оснащенный мощным лазером">
               <div class="container">
                 <h3>Порхает как бабочка, <br>жалит как пчела!</h3>
                 <p>Этот обычный, на первый взгляд, квадрокоптер оснащен<br> мощным лазером, замаскированным под стандартную камеру.</p>
@@ -226,7 +226,7 @@
         <input type="radio" class="credit-btn visually-hidden" id="credit" name="feature-toggle">
         <div class="features-control">
           <label for="delivery">Доставка</label>
-          <label for="warranty">Гарантии</label>
+          <label for="warranty">Гарантия</label>
           <label for="credit">Кредит</label>
         </div>
         <ul class="features-list">
@@ -319,7 +319,7 @@
           <p>Огромный выбор гаджетов не оставит равнодушным гика,<br> который есть в каждом из нас.</p>
           <p>Мы можем доставить ваш товар в самые отдаленные точки<br> России! DEVICE работает со многими транспортными компаниями:</p>
           <ul>
-            <li>Деловые линии</li>
+            <li>Деловые Линии</li>
             <li>Автотрейдинг</li>
             <li>ЖелДорЭкспедиция</li>
           </ul>
@@ -446,20 +446,20 @@
   <!-- Всплывающи окна: напишите нам и карта -->
   <section class="modal modal-write-us">
     <h2 class="visually-hidden">Форма обратной связи</h2>
-    <form  class="write-us-form" action="" method="post">
+    <form  class="write-us-form" action="https://echo.htmlacademy.ru" method="post">
       <p>
         <label for="user-name">Ваше имя:</label>
-        <input type="text" name="user-name" id="user-name" placeholder="Имя Фамилия" required>
+        <input class="fieldback-user-name" type="text" name="user-name" id="user-name" placeholder="Имя Фамилия">
       </p>
       <p>
         <label for="user-email">Ваш e-mail:</label>
-        <input type="email" name="user-email" id="user-email" placeholder="email@example.com" required>
+        <input class="fieldback-user-email" type="email" name="user-email" id="user-email" placeholder="email@example.com">
       </p>
       <p>
         <label for="user-message">Текст письма:</label>
-        <textarea name="user-message" id="user-message" placeholder="В свободной форме" cols="30" rows="10"></textarea>
+        <textarea class="fieldback-user-message" name="user-message" id="user-message" placeholder="В свободной форме" cols="30" rows="10"></textarea>
       </p>
-      <button type="submite">отправить</button>
+      <button type="submit">отправить</button>
     </form>
     <button type="button" class="modal-close" aria-label="Закрыть окно"></button>
   </section>
@@ -469,7 +469,7 @@
     <button type="button" class="modal-close" aria-label="Закрыть окно"></button>
   </section>
   <!-- <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">HTML и CSS, уровень 1</a>».</p> -->
-  <script src="js/script.js"></script>
+  <script src="js/script.min.js"></script>
 </body>
 
 </html>

@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <title>Каталог товаров</title>
   <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style.min.css">
 </head>
 
 <body>
@@ -148,8 +148,8 @@
                   <div class="filter-price">
                     <div class="slider-range-price">
                       <div class="scale-price"></div>
-                      <span class="left-slider"></span>
-                      <span class="right-slider"></span>
+                      <span class="left-slider" aria-label="минимальная цена"></span>
+                      <span class="right-slider" aria-label="максимальная цена"></span>
                     </div>
                     <label for="price-from">от</label>
                     <input type="text" name="price-from" id="price-from" placeholder="0">
@@ -163,23 +163,23 @@
                   <legend>Цвет</legend>
                   <ul class="sidebar-filter-color">
                     <li>
-                      <input class="input-checkbox" type="checkbox" name="black" id="black" checked>
+                      <input class="visually-hidden input-checkbox" type="checkbox" name="black" id="black" checked>
                       <label for="black">Черный</label>
                     </li>
                     <li>
-                      <input class="input-checkbox" type="checkbox" name="white" id="white">
+                      <input class="visually-hidden input-checkbox" type="checkbox" name="white" id="white">
                       <label for="white">Белый</label>
                     </li>
                     <li>
-                      <input class="input-checkbox" t type="checkbox" name="blue" id="blue" checked>
+                      <input class="visually-hidden input-checkbox" t type="checkbox" name="blue" id="blue" checked>
                       <label for="blue">Синий</label>
                     </li>
                     <li>
-                      <input class="input-checkbox" type="checkbox" name="red" id="red" checked>
+                      <input class="visually-hidden input-checkbox" type="checkbox" name="red" id="red" checked>
                       <label for="red">Красный</label>
                     </li>
                     <li>
-                      <input class="input-checkbox" type="checkbox" name="pink" id="pink">
+                      <input class="visually-hidden input-checkbox" type="checkbox" name="pink" id="pink">
                       <label for="pink">Розовый</label>
                     </li>
                   </ul>
@@ -190,11 +190,11 @@
                   <legend>Bluetooth</legend>
                   <ul class="sidebar-filter-radio">
                     <li>
-                      <input type="radio" name="bluetooth" id="bluetooth-yes" value="yes" checked>
+                      <input class="visually-hidden" type="radio" name="bluetooth" id="bluetooth-yes" value="yes" checked>
                       <label for="bluetooth-yes">Есть</label>
                     </li>
                     <li>
-                      <input type="radio" name="bluetooth" id="bluetooth-no" value="no">
+                      <input class="visually-hidden" type="radio" name="bluetooth" id="bluetooth-no" value="no">
                       <label for="bluetooth-no">Нет</label>
                     </li>
                   </ul>
@@ -283,7 +283,7 @@
         </a>
         <ul class="footer-user-list">
           <li>
-            <a href="#" class="profile">
+            <a href="#" class="footer-profile">
               <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="13px" height="12px" viewBox="0 0 13 12" enable-background="new 0 0 13 12" xml:space="preserve">
                 <path d="M0.032,12h12.937c-0.163-2.643-2.074-4.837-4.671-5.543C9.306,5.846,9.985,4.75,9.985,3.485
                 C9.985,1.561,8.425,0,6.5,0S3.015,1.561,3.015,3.485c0,1.264,0.68,2.361,1.688,2.972C2.106,7.163,0.194,9.357,0.032,12z" />
