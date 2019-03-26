@@ -519,7 +519,7 @@ a {
 
 .slider-item {
   position: absolute;
-  z-index: 0;
+  z-index: -1;
 
   width: 1160px;
 
@@ -740,13 +740,63 @@ td {
   -ms-flex-pack: justify;
 }
 
-.popular-list a {
+.popular-item {
+  position: relative;
+}
+
+.popular-item a::before {
+  content: '';
+
   display: block;
+  width: 160px;
+  height: 160px;
+
+  background-color: rgba(240, 197, 46, 0.5);
+}
+
+.popular-item:nth-child(1) a::after {
+  content: url('../img/svg/popular-1.svg');
+  position: absolute;
+  top: 52px;
+  left: 31px;
+}
+
+.popular-item:nth-child(2) a::after {
+  content: url('../img/svg/popular-2.svg');
+  position: absolute;
+  top: 41px;
+  left: 38px;
+}
+
+.popular-item:nth-child(3) a::after {
+  content: url('../img/svg/popular-3.svg');
+  position: absolute;
+  top: 38px;
+  left: 49px;
+}
+
+.popular-item:nth-child(4) a::after {
+  content: url('../img/svg/popular-4.svg');
+  position: absolute;
+  top: 50px;
+  left: 28px;
+}
+
+.popular-item:nth-child(5) a::after {
+  content: url('../img/svg/popular-5.svg');
+  position: absolute;
+  top: 32px;
+  left: 55px;
+}
+
+.popular-item:nth-child(6) a::after {
+  content: url('../img/svg/popular-6.svg');
+  position: absolute;
+  top: 49px;
+  left: 13px;
 }
 
 .popular-list b {
-  position: relative;
-
   display: block;
   width: 160px;
   margin: 35px 0 0;
@@ -759,43 +809,12 @@ td {
   letter-spacing: 0.18px;
 }
 
-.popular-list .wrap {
-  width: 160px;
-  height: 160px;
-
-  background-color: #f8e296;
+.popular-list a:hover::before,
+.popular-list a:focus::before {
+  background-color: rgba(240, 197, 46, 1.0);
 }
 
-.popular-list li:nth-child(1) img {
-  padding: 52px 31px;
-}
-
-.popular-list li:nth-child(2) img {
-  padding: 43px 37px 0;
-}
-
-.popular-list li:nth-child(3) img {
-  padding: 37px 44px;
-}
-
-.popular-list li:nth-child(4) img {
-  padding: 48px 26px;
-}
-
-.popular-list li:nth-child(5) img {
-  padding: 31px 52px;
-}
-
-.popular-list li:nth-child(6) img {
-  padding: 45px 14px;
-}
-
-.popular-list a:hover .wrap,
-.popular-list a:focus .wrap {
-  background-color: #f0c52e;
-}
-
-.popular-list a:active img,
+.popular-list a:active::after,
 .popular-list a:active b {
   opacity: 0.3;
 }
